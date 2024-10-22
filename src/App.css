@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+/* App.css */ 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Container style */
+.container {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Home Page */
+.home-page {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url('./assets/background.gif') center/cover no-repeat;
+  position: relative;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Logo Style */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Button Styles */
+button {
+  background-color: #d89fb7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.5s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Centered Text on Home Page */
+.centered-text {
+  text-align: center;
+  color: rgb(85, 22, 70);
+}
+
+/* About Section */
+.about-section {
+  padding: 30px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 1200px;
+  background-color: rgba(235, 225, 225, 0.767);
+  border-radius: 20px;
+  display: flex;
+  align-items: right;
+}
+
+/* Style for the picture in the About section */
+.about-picture {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  margin-right: 0px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+/* Text container in the About section */
+.about-text {
+  max-width: 500px;
+  color: rgb(85, 22, 70);
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 40px;
+  margin: 20px 0;
+  width: 70%;
+  height: auto;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+
+.projects-section {
+  padding: 60px;
+  text-align: center;
+  color: rgb(85, 22, 70);
+}
+
+.project-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  width: 30%;
+  height: 5;
+  padding: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-image {
+  width: 150px;
+  height: auto;
+  border-bottom: 1px solid #dddddd8e;
+  transition: transform 0.3s ease;
+}
+
+.project-description {
+  text-align: left;
+  margin-left: 20px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  padding: 20px;
+  color: rgb(85, 22, 70);
+}
+
+.contact-item {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-logo {
+  width: 60px;
+  height: 50px;
+  margin-right: 15px;
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact-logo:hover {
+  transform: scale(1.1);
+}
+
+.contact-item p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.contact-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
 }
